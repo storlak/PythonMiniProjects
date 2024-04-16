@@ -6,7 +6,5 @@ A collection of mini Python projects and scripts developed during the learning p
 
 ## Content
 
-1. [Madlib](#madlib-with-python)
+1. [Madlib](/001%20-%20MadLib/)
 2.
-
-## MADLIB with Python
