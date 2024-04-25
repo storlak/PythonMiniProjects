@@ -11,6 +11,6 @@
 - Startrek short story Madlib: a short story to be completed by user.
 - About me Madlib with EasyGui.
 
-🙇 Contact Me for any suggestions!
+🌟 Contact Me for any suggestions!
 
 [![Gmail Badge](https://img.shields.io/badge/-serdartorlak-c14438?style=flat&logo=Gmail&logoColor=white&link=mailto:serdartorlak@gmail.com)](mailto:serdartorlak@gmail.com)

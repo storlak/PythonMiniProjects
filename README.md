@@ -17,3 +17,5 @@ A collection of mini Python projects and scripts developed during the learning p
 ## 🙇 Contact
 
 [![Gmail Badge](https://img.shields.io/badge/-serdartorlak-c14438?style=flat&logo=Gmail&logoColor=white&link=mailto:serdartorlak@gmail.com)](mailto:serdartorlak@gmail.com)
+![Mastodon Follow](https://img.shields.io/mastodon/follow/111266776829036638?style=flat&logo=mastodon&color=blue)
+[![Twitter Badge](https://img.shields.io/badge/-@serdartorlak-1ca0f1?style=flat&labelColor=1ca0f1&logo=twitter&logoColor=white&link=https://twitter.com/serdartorlak)](https://twitter.com/serdartorlak)

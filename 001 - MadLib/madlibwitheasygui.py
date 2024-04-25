@@ -1,3 +1,5 @@
+# madlib with easygui
+
 import easygui as easy
 
 yourname = ["What is your name: "]
