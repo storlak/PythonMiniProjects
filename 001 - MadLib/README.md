@@ -7,9 +7,9 @@
 
 🌟 This short code includes 3 madlibs written in Python:
 
-- About Me: Gathers information about you and prints it.
-- Startrek short story: a short story to be completed by user.
-- A madlib with EasyGui.
+- About Me Madlib: Gathers information about you and prints it.
+- Startrek short story Madlib: a short story to be completed by user.
+- About me Madlib with EasyGui.
 
 🙇 Contact Me for any suggestions!
 
