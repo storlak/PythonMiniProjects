@@ -5,7 +5,8 @@
 
 ![Visitor Count](https://profile-counter.glitch.me/{storlak}/count.svg)
 
-🌟 This short code includes 2 madlibs written in Python:
+🌟 This short code includes 3 madlibs written in Python:
 
 - About Me: Gathers information about you and prints it.
 - Startrek short story: a short story to be completed by user.
+- A madlib with EasyGui.
