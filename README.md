@@ -12,7 +12,7 @@ A collection of mini Python projects and scripts developed during the learning p
 ## 🚀 Content
 
 1. [Madlib](/001%20-%20MadLib/)
-2.
+2. [Dice Roll](002%20-%20Dice%20Roll)
 
 ## 🙇 Contact
 
