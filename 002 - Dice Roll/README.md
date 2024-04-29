@@ -5,9 +5,9 @@
 
 ![Views Counter](https://views-counter.vercel.app/badge?pageId=https%3A%2F%2Fgithub%2Ecom%2Fstorlak%2FPythonMiniProjects&leftColor=000000&rightColor=0adb3f&type=total&label=Viewers&style=none)
 
-🌟 This short script includes dice rolling simulator written in Python:
+🌟 This short script includes dice rolling simulator written in Python.
 
-- Requirements: random & time module.
+- Requirements: random module & time module.
 - Dice Roll: Roll a number between 1-6.
 
 🌟 Contact Me for any suggestions!
