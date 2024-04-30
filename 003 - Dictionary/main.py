@@ -3,19 +3,17 @@ import tkinter
 import menu_utils
 from constants import *
 
-
 dictionary = MultiDictionary()
 
 
-# enter a word in english for meaning
-def search_en(word):
-    input("Enter a word: ")
-    print(dictionary.meaning("en", word))
+# Function to search for the meaning of a word in English
+def search_en():
+    word = word_entry.get()
+    if word:
+        result_text.set(dictionary.meaning("en", word))
 
 
-# functions and menu utils
-
-
+# Functions and menu utils
 # Opens the README in Github
 def open_readme():
     menu_utils.open_url_in_browser(
@@ -38,13 +36,13 @@ def about():
     )
 
 
-# gui
+# GUI
 root = tkinter.Tk()
 root.title("Dictionary")
-root.geometry("300x275")
+root.geometry("400x350")
 root.configure(bg="gray16")
 
-# menu bar
+# Menu bar
 menubar = tkinter.Menu(root)
 root.config(menu=menubar)
 
@@ -78,17 +76,26 @@ search_button = tkinter.Button(
     root, text="Search", fg="black", bg="Turquoise", command=search_en
 )
 bot_label = tkinter.Label(
-    root,
-    text=f"Version: {APP_VERSION} - {AUTHOR}",
-    fg="black",
-    bg="Turquoise",
+    root, text=f"Version: {APP_VERSION} - {AUTHOR}", fg="black", bg="Turquoise"
 )
 
+# Frame to display search results
+result_frame = tkinter.Frame(root, bg="gray16")
+result_text = tkinter.StringVar()
+result_label = tkinter.Label(
+    result_frame, textvariable=result_text, fg="#FFFFFF", bg="gray16", wraplength=280
+)
+result_text1 = tkinter.Label(
+    result_frame, text="Search Results", fg="white", bg="gray16"
+)
 
 # Placing widgets, labels, entries
 word_label.pack(pady=5)
 word_entry.pack()
 search_button.pack(pady=5)
+result_frame.pack(pady=5, expand=True, anchor="n")
+result_text1.pack()
+result_label.pack()
 bot_label.pack(side="bottom", fill="x")
 
 root.mainloop()
