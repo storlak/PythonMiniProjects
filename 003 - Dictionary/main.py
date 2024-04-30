@@ -77,10 +77,18 @@ word_entry = tkinter.Entry(root, width=30)
 search_button = tkinter.Button(
     root, text="Search", fg="black", bg="Turquoise", command=search_en
 )
+bot_label = tkinter.Label(
+    root,
+    text=f"Version: {APP_VERSION} - {AUTHOR}",
+    fg="black",
+    bg="Turquoise",
+)
+
 
 # Placing widgets, labels, entries
 word_label.pack(pady=5)
 word_entry.pack()
 search_button.pack(pady=5)
+bot_label.pack(side="bottom", fill="x")
 
 root.mainloop()
