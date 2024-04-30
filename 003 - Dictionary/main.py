@@ -1,5 +1,6 @@
 from PyMultiDictionary import MultiDictionary
 import tkinter
+import menu_utils
 
 dictionary = MultiDictionary()
 
