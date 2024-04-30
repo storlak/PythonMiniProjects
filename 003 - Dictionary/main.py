@@ -1,5 +1,6 @@
 from PyMultiDictionary import MultiDictionary
 import tkinter
+from tkinter import ttk
 import menu_utils
 from constants import *
 
@@ -10,7 +11,12 @@ dictionary = MultiDictionary()
 def search_en():
     word = word_entry.get()
     if word:
-        result_text.set(dictionary.meaning("en", word))
+        # Get meaning
+        meaning = dictionary.meaning("en", word)
+        # Get synonyms
+        synonyms = dictionary.synonym("en", word)
+        # Display meaning and synonyms
+        result_text.set(f"Meaning: {meaning}\nSynonyms: {', '.join(synonyms)}")
 
 
 # Functions and menu utils
@@ -70,11 +76,14 @@ help_menu.add_separator()
 help_menu.add_command(label="About", command=about)
 
 # Labels, entries, widgets
-word_label = tkinter.Label(root, text="Word in English", fg="#FFFFFF", bg="gray16")
-word_entry = tkinter.Entry(root, width=30)
-search_button = tkinter.Button(
-    root, text="Search", fg="black", bg="Turquoise", command=search_en
+word_label = tkinter.Label(
+    root, text="English to English Dictionary", fg="#FFFFFF", bg="gray16"
 )
+word_entry = tkinter.Entry(root, width=30)
+meaning_button = tkinter.Button(
+    root, text="Meaning", fg="black", bg="Turquoise", command=search_en
+)
+separator = ttk.Separator(root, orient="horizontal")  # Separator widget
 bot_label = tkinter.Label(
     root, text=f"Version: {APP_VERSION} - {AUTHOR}", fg="black", bg="Turquoise"
 )
@@ -92,7 +101,8 @@ result_text1 = tkinter.Label(
 # Placing widgets, labels, entries
 word_label.pack(pady=5)
 word_entry.pack()
-search_button.pack(pady=5)
+meaning_button.pack(pady=5)
+separator.pack(fill="x", pady=5)  # Packing separator after search button
 result_frame.pack(pady=5, expand=True, anchor="n")
 result_text1.pack()
 result_label.pack()
