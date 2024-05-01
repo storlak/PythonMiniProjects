@@ -83,6 +83,11 @@ file_menu.add_command(label="Exit", command=window.quit)
 # Edit menu
 edit_menu = tkinter.Menu(menubar, tearoff=0)
 menubar.add_cascade(label="Edit", menu=edit_menu)
+edit_menu.add_command(label="Meaning", command=meaning_en)
+edit_menu.add_command(label="Synonym", command=synonyms_en)
+edit_menu.add_command(label="Antonym", command=antonyms_en)
+edit_menu.add_separator()
+edit_menu.add_command(label="Clear", command=clear)
 
 # Tools menu
 tools_menu = tkinter.Menu(menubar, tearoff=0)
