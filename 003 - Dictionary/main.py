@@ -1,38 +1,46 @@
-import tkinter
-from tkinter import ttk
-from tkinter import messagebox
-from PyMultiDictionary import MultiDictionary
-from constants import *
+import gui_utils
 import menu_utils
+import tkinter
+from constants import *
+from PyMultiDictionary import MultiDictionary
+from tkinter import messagebox
+from tkinter import ttk
 
 dictionary = MultiDictionary()
 
 
+# functions for the buttons
 def meaning_en():
     word = meaning_entry.get()
-    if word:
-        # Get meaning
-        meaning = dictionary.meaning("en", word)
-        # Display meaning
-        result_text.set(f"Meaning: {meaning}")
+    if not word:
+        gui_utils.show_warning_message("Warning", "Please enter a word.")
+        return
+    # Get meaning
+    meaning = dictionary.meaning("en", word)
+    # Display meaning
+    result_text.set(f"Meaning: {meaning}")
 
 
 def synonyms_en():
     word = synonym_entry.get()
-    if word:
-        # Get synonyms
-        synonyms = dictionary.synonym("en", word)
-        # Display synonyms
-        result_text.set(f"Synonyms: {', '.join(synonyms)}")
+    if not word:
+        gui_utils.show_warning_message("Warning", "Please enter a word.")
+        return
+    # Get synonyms
+    synonyms = dictionary.synonym("en", word)
+    # Display synonyms
+    result_text.set(f"Synonyms: {', '.join(synonyms)}")
 
 
 def antonyms_en():
     word = antonym_entry.get()
-    if word:
-        # Get antonyms
-        antonyms = dictionary.antonym("en", word)
-        # Display antonyms
-        result_text.set(f"Antonyms: {', '.join(antonyms)}")
+    if not word:
+        gui_utils.show_warning_message("Warning", "Please enter a word.")
+        return
+    # Get antonyms
+    antonyms = dictionary.antonym("en", word)
+    # Display antonyms
+    result_text.set(f"Antonyms: {', '.join(antonyms)}")
 
 
 def clear():
