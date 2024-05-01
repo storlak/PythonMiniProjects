@@ -8,15 +8,22 @@ dictionary = MultiDictionary()
 
 
 # Function to search for the meaning of a word in English
-def search_en():
+def meaning_en():
     word = word_entry.get()
     if word:
         # Get meaning
         meaning = dictionary.meaning("en", word)
+        # Display meaning
+        result_text.set(f"Meaning: {meaning}")
+
+
+def synonyms_en():
+    word = word_entry.get()
+    if word:
         # Get synonyms
         synonyms = dictionary.synonym("en", word)
-        # Display meaning and synonyms
-        result_text.set(f"Meaning: {meaning}\nSynonyms: {', '.join(synonyms)}")
+        # Display synonyms
+        result_text.set(f"Synonyms: {', '.join(synonyms)}")
 
 
 # Functions and menu utils
@@ -81,7 +88,7 @@ word_label = tkinter.Label(
 )
 word_entry = tkinter.Entry(root, width=30)
 meaning_button = tkinter.Button(
-    root, text="Meaning", fg="black", bg="Turquoise", command=search_en
+    root, text="Meaning", fg="black", bg="Turquoise", command=meaning_en
 )
 separator = ttk.Separator(root, orient="horizontal")  # Separator widget
 bot_label = tkinter.Label(
