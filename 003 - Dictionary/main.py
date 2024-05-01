@@ -113,12 +113,21 @@ antonym_title_label.grid(row=0, column=2)
 
 meaning_entry = tkinter.Entry(search_frame)
 meaning_entry.grid(row=1, column=0)
+meaning_entry.bind(
+    "<Return>", lambda event: meaning_en()
+)  # Bind Return key to meaning_en
 
 synonym_entry = tkinter.Entry(search_frame)
 synonym_entry.grid(row=1, column=1)
+synonym_entry.bind(
+    "<Return>", lambda event: synonyms_en()
+)  # Bind Return key to synonyms_en
 
 antonym_entry = tkinter.Entry(search_frame)
 antonym_entry.grid(row=1, column=2)
+antonym_entry.bind(
+    "<Return>", lambda event: antonyms_en()
+)  # Bind Return key to antonyms_en
 
 meaning_search_button = tkinter.Button(search_frame, text="Search", command=meaning_en)
 meaning_search_button.grid(row=2, column=0)
