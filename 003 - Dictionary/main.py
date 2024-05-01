@@ -1,15 +1,15 @@
-from PyMultiDictionary import MultiDictionary
 import tkinter
 from tkinter import ttk
-import menu_utils
+from tkinter import messagebox
+from PyMultiDictionary import MultiDictionary
 from constants import *
+import menu_utils
 
 dictionary = MultiDictionary()
 
 
-# Function to search for the meaning of a word in English
 def meaning_en():
-    word = word_entry.get()
+    word = meaning_entry.get()
     if word:
         # Get meaning
         meaning = dictionary.meaning("en", word)
@@ -18,12 +18,28 @@ def meaning_en():
 
 
 def synonyms_en():
-    word = word_entry.get()
+    word = synonym_entry.get()
     if word:
         # Get synonyms
         synonyms = dictionary.synonym("en", word)
         # Display synonyms
         result_text.set(f"Synonyms: {', '.join(synonyms)}")
+
+
+def antonyms_en():
+    word = antonym_entry.get()
+    if word:
+        # Get antonyms
+        antonyms = dictionary.antonym("en", word)
+        # Display antonyms
+        result_text.set(f"Antonyms: {', '.join(antonyms)}")
+
+
+def clear():
+    meaning_entry.delete(0, "end")
+    synonym_entry.delete(0, "end")
+    antonym_entry.delete(0, "end")
+    result_text.set("")
 
 
 # Functions and menu utils
@@ -49,20 +65,20 @@ def about():
     )
 
 
-# GUI
-root = tkinter.Tk()
-root.title("Dictionary")
-root.geometry("400x350")
-root.configure(bg="gray16")
+# main window & frame
+window = tkinter.Tk()
+window.title("English Dictionary")
+frame = tkinter.Frame(window)
+frame.pack()
 
 # Menu bar
-menubar = tkinter.Menu(root)
-root.config(menu=menubar)
+menubar = tkinter.Menu(window)
+window.config(menu=menubar)
 
 # File menu
 file_menu = tkinter.Menu(menubar, tearoff=0)
 menubar.add_cascade(label="File", menu=file_menu)
-file_menu.add_command(label="Exit", command=root.quit)
+file_menu.add_command(label="Exit", command=window.quit)
 
 # Edit menu
 edit_menu = tkinter.Menu(menubar, tearoff=0)
@@ -82,37 +98,57 @@ help_menu.add_command(label="View Licence", command=open_license)
 help_menu.add_separator()
 help_menu.add_command(label="About", command=about)
 
-# Labels, entries, widgets
-word_label = tkinter.Label(
-    root, text="English to English Dictionary", fg="#FFFFFF", bg="gray16"
-)
-word_entry = tkinter.Entry(root, width=30)
-meaning_button = tkinter.Button(
-    root, text="Meaning", fg="black", bg="Turquoise", command=meaning_en
-)
-separator = ttk.Separator(root, orient="horizontal")  # Separator widget
-bot_label = tkinter.Label(
-    root, text=f"Version: {APP_VERSION} - {AUTHOR}", fg="black", bg="Turquoise"
-)
+# search frame
+search_frame = tkinter.LabelFrame(frame, text="Search any word for:")
+search_frame.grid(row=0, column=0, padx=20, pady=10)
 
-# Frame to display search results
-result_frame = tkinter.Frame(root, bg="gray16")
+meaning_title_label = tkinter.Label(search_frame, text="Meaning")
+meaning_title_label.grid(row=0, column=0)
+
+synonym_title_label = tkinter.Label(search_frame, text="Synonym")
+synonym_title_label.grid(row=0, column=1)
+
+antonym_title_label = tkinter.Label(search_frame, text="Antonym")
+antonym_title_label.grid(row=0, column=2)
+
+meaning_entry = tkinter.Entry(search_frame)
+meaning_entry.grid(row=1, column=0)
+
+synonym_entry = tkinter.Entry(search_frame)
+synonym_entry.grid(row=1, column=1)
+
+antonym_entry = tkinter.Entry(search_frame)
+antonym_entry.grid(row=1, column=2)
+
+meaning_search_button = tkinter.Button(search_frame, text="Search", command=meaning_en)
+meaning_search_button.grid(row=2, column=0)
+
+synonym_search_button = tkinter.Button(search_frame, text="Search", command=synonyms_en)
+synonym_search_button.grid(row=2, column=1)
+
+antonym_search_button = tkinter.Button(search_frame, text="Search", command=antonyms_en)
+antonym_search_button.grid(row=2, column=2)
+
+# adjusting grid for all grids
+for widget in search_frame.winfo_children():
+    widget.grid_configure(
+        padx=10, pady=5, sticky="nsew"
+    )  # Make widgets sticky to all sides
+
+# frame to display search results
+result_frame = tkinter.Frame(
+    frame, bg=search_frame["bg"], highlightbackground="white", highlightthickness=1
+)  # Use the same background color
+result_frame.grid(row=1, column=0, sticky="news", padx=20, pady=10)
+
 result_text = tkinter.StringVar()
 result_label = tkinter.Label(
     result_frame, textvariable=result_text, fg="#FFFFFF", bg="gray16", wraplength=280
 )
-result_text1 = tkinter.Label(
-    result_frame, text="Search Results", fg="white", bg="gray16"
-)
+result_label.pack(expand=True, fill="both")  # Expand to fill the available space
 
-# Placing widgets, labels, entries
-word_label.pack(pady=5)
-word_entry.pack()
-meaning_button.pack(pady=5)
-separator.pack(fill="x", pady=5)  # Packing separator after search button
-result_frame.pack(pady=5, expand=True, anchor="n")
-result_text1.pack()
-result_label.pack()
-bot_label.pack(side="bottom", fill="x")
+# Clear Button
+button = tkinter.Button(frame, text="Clear", bg="red", fg="white", command=clear)
+button.grid(row=2, sticky="news", column=0, padx=20, pady=10)
 
-root.mainloop()
+window.mainloop()
