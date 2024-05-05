@@ -23,6 +23,7 @@ This script is English to English Dictionary with a Tkinter interface written in
 - Use meaning, synonym, antonym to search the meaning, synonym and antonym of a word.
 - Use clear button to clear the search and explanation area.
 - Use copy button to copy your search result.
+- If you have any questions or suggestions use [Disccusions](https://github.com/storlak/PythonMiniProjects/discussions)
 
 🌟 Contact Me for any suggestions!
 
