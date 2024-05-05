@@ -11,8 +11,8 @@ A collection of mini Python projects and scripts developed during the learning p
 
 ## Help & Wiki & Discussion
 
-- Use Discussions page if you have any suggestions, questions.
-- Use WikiPage and Readme files to see How to use and RoadMap of each project.
+- Use [Discussions](https://github.com/storlak/PythonMiniProjects/discussions) page if you have any suggestions, questions.
+- Use [WikiPage](https://github.com/storlak/PythonMiniProjects/wiki) and Readme files to see How to use and RoadMap of each project.
 
 ## 🚀 Content - Projects
 
