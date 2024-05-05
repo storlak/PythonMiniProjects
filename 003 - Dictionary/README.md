@@ -12,8 +12,8 @@ This script is English to English Dictionary with a Tkinter interface written in
 - Searches words, synonymes, antonymes in English.
 - Using PyMultiDictionary as data base.
 - Requirements: Tkinter, Messagebox, Pymultidictionary
-- Includes a tkinter interface. Search button or enter key works as well.
-- Soon other languages will be added!
+- Includes a tkinter interface.
+- Search button or enter key works as well.
 
 🌟 How to use?
 
@@ -24,6 +24,12 @@ This script is English to English Dictionary with a Tkinter interface written in
 - Use clear button to clear the search and explanation area.
 - Use copy button to copy your search result.
 - If you have any questions or suggestions use [Disccusions](https://github.com/storlak/PythonMiniProjects/discussions)
+
+🌟 Roadmap
+
+- Soon other languages will be added!
+- Script will be converted to an .exe file.
+- Will try to convert the Dictionary to flatpak and update to flatpak repo.
 
 🌟 Contact Me for any suggestions!
 
