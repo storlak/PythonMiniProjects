@@ -7,9 +7,10 @@
 
 🌟 This script is a Dictionary with a Tkinter interface written in Python.
 
-- Searches words, synonymes in English.
-- Requirements: tkinter, messagebox
-- Incudes a tkinter interface
+- Searches words, synonymes, antonymes in English.
+- Using PyMultiDictionary as data base.
+- Requirements: tkinter, messagebox, Pymultidictionary
+- Includes a tkinter interface. Search or enter button works as well.
 - Soon other languages will be added!
 
 🌟 Contact Me for any suggestions!
