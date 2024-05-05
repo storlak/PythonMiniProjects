@@ -56,10 +56,13 @@ def open_readme():
     menu_utils.open_url_in_browser(
         "https://github.com/storlak/PythonMiniProjects/blob/main/003%20-%20Dictionary/README.md"
     )
+
+
 def welcome():
     menu_utils.open_url_in_browser(
-        https://github.com/storlak/PythonMiniProjects/tree/main/003%20-%20Dictionary
+        "https://github.com/storlak/PythonMiniProjects/tree/main/003%20-%20Dictionary"
     )
+
 
 # Opens the License file in Github
 def open_license():
