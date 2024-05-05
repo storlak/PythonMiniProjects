@@ -9,9 +9,15 @@
 
 - Searches words, synonymes, antonymes in English.
 - Using PyMultiDictionary as data base.
-- Requirements: tkinter, messagebox, Pymultidictionary
-- Includes a tkinter interface. Search or enter button works as well.
+- Requirements: Tkinter, Messagebox, Pymultidictionary
+- Includes a tkinter interface. Search button or enter key works as well.
 - Soon other languages will be added!
+
+🌟 How to use?
+
+- Type any word in english in search boxes.
+- Don't add "s", plural in the end of the word. Search returns null.
+- Use clear button to clear the search and explanation area.
 
 🌟 Contact Me for any suggestions!
 
