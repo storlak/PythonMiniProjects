@@ -22,6 +22,7 @@ This script is English to English Dictionary with a Tkinter interface written in
 - If you're searching a verb don't use "to". write "help" instead of "to help"
 - Use meaning, synonym, antonym to search the meaning, synonym and antonym of a word.
 - Use clear button to clear the search and explanation area.
+- Use copy button to copy your search result.
 
 🌟 Contact Me for any suggestions!
 
