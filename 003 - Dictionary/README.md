@@ -15,7 +15,7 @@ This script is English to English Dictionary with a Tkinter interface written in
 - Includes a tkinter interface.
 - Search button or enter key works as well.
 
-For pip
+For installing modules:
 
 ```
 pip install Pymultidictionary
