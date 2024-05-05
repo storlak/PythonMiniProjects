@@ -122,6 +122,7 @@ edit_menu.add_command(label="Clear", command=clear)
 # Tools menu
 tools_menu = tkinter.Menu(menubar, tearoff=0)
 menubar.add_cascade(label="Tools", menu=tools_menu)
+tools_menu.add_command(label="Shortcuts")
 
 # Help menu
 help_menu = tkinter.Menu(menubar, tearoff=0)
