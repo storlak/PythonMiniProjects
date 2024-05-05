@@ -5,7 +5,9 @@
 
 ![Views Counter](https://views-counter.vercel.app/badge?pageId=https%3A%2F%2Fgithub%2Ecom%2Fstorlak%2FPythonMiniProjects&leftColor=000000&rightColor=0adb3f&type=total&label=Viewers&style=none)
 
-🌟 This script is a Dictionary with a Tkinter interface written in Python.
+🌟 Introduction
+
+This script is English to English Dictionary with a Tkinter interface written in Python.
 
 - Searches words, synonymes, antonymes in English.
 - Using PyMultiDictionary as data base.
@@ -17,6 +19,8 @@
 
 - Type any word in english in search boxes.
 - Don't add "s", plural in the end of the word. Search returns null.
+- If you're searching a verb don't use "to". write "help" instead of "to help"
+- Use meaning, synonym, antonym to search the meaning, synonym and antonym of a word.
 - Use clear button to clear the search and explanation area.
 
 🌟 Contact Me for any suggestions!

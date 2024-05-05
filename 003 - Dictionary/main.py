@@ -79,6 +79,13 @@ def about():
     )
 
 
+# Function to copy the result text to clipboard
+def copy_result():
+    result = result_text.get()
+    window.clipboard_clear()  # Clear the clipboard
+    window.clipboard_append(result)  # Append the result text to clipboard
+
+
 # main window & frame
 window = tkinter.Tk()
 window.title("English Dictionary")
@@ -101,6 +108,7 @@ edit_menu.add_command(label="Meaning", command=meaning_en)
 edit_menu.add_command(label="Synonym", command=synonyms_en)
 edit_menu.add_command(label="Antonym", command=antonyms_en)
 edit_menu.add_separator()
+edit_menu.add_command(label="Copy Search", command=copy_result)
 edit_menu.add_command(label="Clear", command=clear)
 
 # Tools menu
@@ -175,8 +183,14 @@ result_label = tkinter.Label(
 )
 result_label.pack(expand=True, fill="both")  # Expand to fill the available space
 
-# Clear Button
+# Clear Button & Copy Result Button
 button = tkinter.Button(frame, text="Clear", bg="red", fg="white", command=clear)
-button.grid(row=2, sticky="news", column=0, padx=20, pady=10)
+button.grid(row=2, sticky="news", column=0, padx=20, pady=5)
+
+copy_button = tkinter.Button(
+    frame, text="Copy Search Result", bg="gray16", fg="white", command=copy_result
+)
+copy_button.grid(row=3, column=0, sticky="news", padx=20, pady=5)
+
 
 window.mainloop()
