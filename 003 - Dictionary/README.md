@@ -2,6 +2,7 @@
 
 ![Static Badge](https://img.shields.io/badge/python-exercises-blue?logo=python)
 ![Static Badge](https://img.shields.io/badge/IDE-VsCode-blue)
+![Static Badge](https://img.shields.io/badge/English-Dictionary-red)
 
 ![Views Counter](https://views-counter.vercel.app/badge?pageId=https%3A%2F%2Fgithub%2Ecom%2Fstorlak%2FPythonMiniProjects&leftColor=000000&rightColor=0adb3f&type=total&label=Viewers&style=none)
 
