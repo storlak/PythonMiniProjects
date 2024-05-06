@@ -7,13 +7,14 @@
 
 🌟 Introduction
 
-This script is English to English Dictionary with a Tkinter interface written in Python.
+This script is an English to English Dictionary with a Tkinter interface written in Python.
 
 - Searches words, synonymes, antonymes in English.
 - Using PyMultiDictionary as database.
 - Requirements: Tkinter, Messagebox, Pymultidictionary
 - Includes a tkinter interface.
 - Search button or enter key works as well.
+- Use help menu to contact further info.
 
 For installing modules:
 
