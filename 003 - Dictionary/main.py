@@ -57,22 +57,22 @@ def language_selection(language):
     selected_language = language
 
 
-# Functions and menu utils
-# Opens the README in Github
+# functions and menu utils
+# opens the README file in github
 def open_readme():
     menu_utils.open_url_in_browser(
         "https://github.com/storlak/PythonMiniProjects/blob/main/003%20-%20Dictionary/README.md"
     )
 
 
-# opens the project in Github
+# opens the project in github
 def welcome():
     menu_utils.open_url_in_browser(
         "https://github.com/storlak/PythonMiniProjects/tree/main/003%20-%20Dictionary"
     )
 
 
-# Opens the License file in Github
+# opens the license file in github
 def open_license():
     menu_utils.open_url_in_browser(
         "https://github.com/storlak/PythonMiniProjects/blob/main/LICENSE"
@@ -81,7 +81,7 @@ def open_license():
 
 # pops up about message
 def about():
-    current_date = "05.05.2024"
+    current_date = "07.05.2024"
     menu_utils.show_info_message(
         "About",
         f"{APP_NAME}\nVersion: {APP_VERSION}\nAuthor: {AUTHOR}\nLast Update: {current_date}",
@@ -94,7 +94,7 @@ def help():
     )
 
 
-# Function to copy the result text to clipboard
+# copy the result text to clipboard
 def copy_result():
     result = result_text.get()
     window.clipboard_clear()  # Clear the clipboard
@@ -200,7 +200,7 @@ result_label = tkinter.Label(
 )
 result_label.pack(expand=True, fill="both")  # Expand to fill the available space
 
-# Clear Button & Copy Result Button
+# clear button & copy result button
 button = tkinter.Button(frame, text="Clear", bg="red", fg="white", command=clear)
 button.grid(row=2, sticky="news", column=0, padx=20, pady=5)
 
@@ -209,14 +209,14 @@ copy_button = tkinter.Button(
 )
 copy_button.grid(row=3, column=0, sticky="news", padx=20, pady=5)
 
-# Radio buttons for language selection
+# radio buttons for language selection
 language_frame = tkinter.LabelFrame(
     frame,
     text="Select a language:",
 )
 language_frame.grid(row=4, column=0, sticky="news", padx=20, pady=10)
 
-# Radio buttons for language selection
+# radio buttons for language selection
 language_button = tkinter.Radiobutton(
     language_frame, text="English", value="en", command=lambda: language_selection("en")
 )
@@ -245,7 +245,7 @@ language_button4 = tkinter.Radiobutton(
 )
 language_button4.grid(row=4, column=4)
 
-# Set English radio button as default
+# set English radio button as default
 language_button.select()
 selected_language = "en"
 
