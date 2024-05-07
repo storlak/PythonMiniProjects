@@ -1,46 +1,48 @@
+import tkinter
 import gui_utils
 import menu_utils
-import tkinter
-from constants import *
 from PyMultiDictionary import MultiDictionary
 from tkinter import messagebox
 from tkinter import ttk
+from constants import *
 
 dictionary = MultiDictionary()
+selected_language = None  # Initialize selected_language to None initially
 
 
 # functions for the buttons
 def meaning_en():
-    word = meaning_entry.get()
-    if not word:
-        gui_utils.show_warning_message("Warning", "Please enter a word.")
-        return
-    # Get meaning
-    meaning = dictionary.meaning("en", word)
-    # Display meaning
-    result_text.set(f"Meaning: {meaning}")
+    search_word(meaning_entry.get(), "meaning")
 
 
 def synonyms_en():
-    word = synonym_entry.get()
-    if not word:
-        gui_utils.show_warning_message("Warning", "Please enter a word.")
-        return
-    # Get synonyms
-    synonyms = dictionary.synonym("en", word)
-    # Display synonyms
-    result_text.set(f"Synonyms: {', '.join(synonyms)}")
+    search_word(synonym_entry.get(), "synonyms")
 
 
 def antonyms_en():
-    word = antonym_entry.get()
+    search_word(antonym_entry.get(), "antonyms")
+
+
+def search_word(word, search_type):
     if not word:
         gui_utils.show_warning_message("Warning", "Please enter a word.")
         return
-    # Get antonyms
-    antonyms = dictionary.antonym("en", word)
-    # Display antonyms
-    result_text.set(f"Antonyms: {', '.join(antonyms)}")
+
+    global selected_language
+    if search_type == "meaning":
+        result = dictionary.meaning(selected_language, word)
+    elif search_type == "synonyms":
+        result = dictionary.synonym(selected_language, word)
+    elif search_type == "antonyms":
+        result = dictionary.antonym(selected_language, word)
+
+    if result:
+        if isinstance(result, list):
+            result_text.set(f"{search_type.capitalize()}: {', '.join(result)}")
+        else:
+            result_text.set(f"{search_type.capitalize()}: {result}")
+    else:
+        result_text.set(f"No {search_type} found for '{word}'")
 
 
 def clear():
@@ -48,6 +50,11 @@ def clear():
     synonym_entry.delete(0, "end")
     antonym_entry.delete(0, "end")
     result_text.set("")
+
+
+def language_selection(language):
+    global selected_language
+    selected_language = language
 
 
 # Functions and menu utils
@@ -202,5 +209,50 @@ copy_button = tkinter.Button(
 )
 copy_button.grid(row=3, column=0, sticky="news", padx=20, pady=5)
 
+# Radio buttons for language selection
+language_frame = tkinter.LabelFrame(
+    frame,
+    text="Select a language:",
+)
+language_frame.grid(row=4, column=0, sticky="news", padx=20, pady=10)
+
+# Radio buttons for language selection
+language_button = tkinter.Radiobutton(
+    language_frame, text="English", value="en", command=lambda: language_selection("en")
+)
+language_button.grid(row=4, column=0)
+
+language_button1 = tkinter.Radiobutton(
+    language_frame, text="Türkçe", value="tr", command=lambda: language_selection("tr")
+)
+language_button1.grid(row=4, column=1)
+
+language_button2 = tkinter.Radiobutton(
+    language_frame,
+    text="Français",
+    value="fr",
+    command=lambda: language_selection("fr"),
+)
+language_button2.grid(row=4, column=2)
+
+language_button3 = tkinter.Radiobutton(
+    language_frame, text="中国人", value="zh", command=lambda: language_selection("zh")
+)
+language_button3.grid(row=4, column=3)
+
+language_button4 = tkinter.Radiobutton(
+    language_frame, text="Русский", value="ru", command=lambda: language_selection("ru")
+)
+language_button4.grid(row=4, column=4)
+
+# Set English radio button as default
+language_button.select()
+selected_language = "en"
+
+# adjusting grid for all grids
+for widget in language_frame.winfo_children():
+    widget.grid_configure(
+        padx=10, pady=5, sticky="nsew"
+    )  # Make widgets sticky to all sides
 
 window.mainloop()
