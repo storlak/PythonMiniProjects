@@ -81,7 +81,7 @@ def open_license():
 
 # pops up about message
 def about():
-    current_date = "07.05.2024"
+    current_date = "09.05.2024"
     menu_utils.show_info_message(
         "About",
         f"{APP_NAME}\nVersion: {APP_VERSION}\nAuthor: {AUTHOR}\nLast Update: {current_date}",
@@ -145,6 +145,13 @@ window.bind_all("<Alt-l>", lambda event: clear())
 tools_menu = tkinter.Menu(menubar, tearoff=0)
 menubar.add_cascade(label="Tools", menu=tools_menu)
 tools_menu.add_command(label="Quick Commands", command=shortcuts)
+tools_menu.add_separator()
+tools_menu.add_command(label="Switch to English")
+tools_menu.add_command(label="Switch to Turkish")
+tools_menu.add_command(label="Switch to French")
+tools_menu.add_command(label="Switch to Mandarin")
+tools_menu.add_command(label="Switch to Russian")
+
 
 # Help menu
 help_menu = tkinter.Menu(menubar, tearoff=0)
