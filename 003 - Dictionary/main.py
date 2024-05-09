@@ -88,6 +88,13 @@ def about():
     )
 
 
+def shortcuts():
+    menu_utils.show_info_message(
+        "Keyboard Shortcuts",
+        f"{KEYBOARD_SHORTCUTS}:\nSearch Meaning:  {MEANING}\nSearch Synonym: {SYNONYM}\nSearch Antonym: {ANTONYM}\nCopy Search: {COPY}\nClear: {CLEAR}\n",
+    )
+
+
 def help():
     menu_utils.open_url_in_browser(
         "https://github.com/storlak/PythonMiniProjects/discussions"
@@ -117,19 +124,27 @@ menubar.add_cascade(label="File", menu=file_menu)
 file_menu.add_command(label="Exit", command=window.quit)
 
 # Edit menu
+# Edit menu
 edit_menu = tkinter.Menu(menubar, tearoff=0)
 menubar.add_cascade(label="Edit", menu=edit_menu)
-edit_menu.add_command(label="Search Meaning", command=meaning_en)
-edit_menu.add_command(label="Search Synonym", command=synonyms_en)
-edit_menu.add_command(label="Search Antonym", command=antonyms_en)
+edit_menu.add_command(label="Search Meaning", command=meaning_en, accelerator="Alt+M")
+edit_menu.add_command(label="Search Synonym", command=synonyms_en, accelerator="Alt+S")
+edit_menu.add_command(label="Search Antonym", command=antonyms_en, accelerator="Alt+A")
 edit_menu.add_separator()
-edit_menu.add_command(label="Copy Search", command=copy_result)
-edit_menu.add_command(label="Clear", command=clear)
+edit_menu.add_command(label="Copy Search", command=copy_result, accelerator="Alt+C")
+edit_menu.add_command(label="Clear", command=clear, accelerator="Alt+L")
+
+# Bind keyboard shortcuts to menu items
+window.bind_all("<Alt-m>", lambda event: meaning_en())
+window.bind_all("<Alt-s>", lambda event: synonyms_en())
+window.bind_all("<Alt-a>", lambda event: antonyms_en())
+window.bind_all("<Alt-c>", lambda event: copy_result())
+window.bind_all("<Alt-l>", lambda event: clear())
 
 # Tools menu
 tools_menu = tkinter.Menu(menubar, tearoff=0)
 menubar.add_cascade(label="Tools", menu=tools_menu)
-tools_menu.add_command(label="Shortcuts")
+tools_menu.add_command(label="Shortcuts", command=shortcuts)
 
 # Help menu
 help_menu = tkinter.Menu(menubar, tearoff=0)
