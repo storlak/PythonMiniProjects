@@ -18,7 +18,7 @@ A collection of mini Python projects and scripts developed during the learning p
 
 1. [Madlib](/001%20-%20MadLib/)
 2. [Dice Roll](002%20-%20Dice%20Roll)
-3. [Dictionary](/003%20-%20Dictionary)
+3. [D5L Dictionary](/003%20-%20Dictionary)
 
 ## 🙇 Contact
 
