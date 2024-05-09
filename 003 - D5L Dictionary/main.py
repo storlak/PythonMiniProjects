@@ -147,10 +147,10 @@ menubar.add_cascade(label="Tools", menu=tools_menu)
 tools_menu.add_command(label="Quick Commands", command=shortcuts)
 tools_menu.add_separator()
 tools_menu.add_command(label="Switch to English")
-tools_menu.add_command(label="Switch to Turkish")
-tools_menu.add_command(label="Switch to French")
-tools_menu.add_command(label="Switch to Mandarin")
-tools_menu.add_command(label="Switch to Russian")
+tools_menu.add_command(label="Türkçe Arayüz")
+tools_menu.add_command(label="Interface française")
+tools_menu.add_command(label="中文界面")
+tools_menu.add_command(label="Русский интерфейс")
 
 
 # Help menu
