@@ -103,7 +103,7 @@ def copy_result():
 
 # main window & frame
 window = tkinter.Tk()
-window.title("TOR Dictionary")
+window.title("D5L Dictionary")
 frame = tkinter.Frame(window)
 frame.pack()
 
