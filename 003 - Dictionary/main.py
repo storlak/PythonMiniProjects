@@ -91,7 +91,7 @@ def about():
 def shortcuts():
     menu_utils.show_info_message(
         "Keyboard Shortcuts",
-        f"{KEYBOARD_SHORTCUTS}:\nSearch Meaning:  {MEANING}\nSearch Synonym: {SYNONYM}\nSearch Antonym: {ANTONYM}\nCopy Search: {COPY}\nClear: {CLEAR}\n",
+        f"{KEYBOARD_SHORTCUTS}:\nSearch Meaning:  {MEANING}\nSearch Synonym: {SYNONYM}\nSearch Antonym: {ANTONYM}\nCopy Search: {COPY}\nClear: {CLEAR}\nHelp: {HELP}",
     )
 
 
@@ -144,7 +144,7 @@ window.bind_all("<Alt-l>", lambda event: clear())
 # Tools menu
 tools_menu = tkinter.Menu(menubar, tearoff=0)
 menubar.add_cascade(label="Tools", menu=tools_menu)
-tools_menu.add_command(label="Shortcuts", command=shortcuts)
+tools_menu.add_command(label="Quick Commands", command=shortcuts)
 
 # Help menu
 help_menu = tkinter.Menu(menubar, tearoff=0)
@@ -152,10 +152,13 @@ menubar.add_cascade(label="Help", menu=help_menu)
 help_menu.add_command(label="Welcome", command=welcome)
 help_menu.add_command(label="Documentation", command=open_readme)
 help_menu.add_separator()
-help_menu.add_command(label="Help", command=help)
+help_menu.add_command(label="Help", command=help, accelerator="F1")
 help_menu.add_command(label="View Licence", command=open_license)
 help_menu.add_separator()
 help_menu.add_command(label="About", command=about)
+
+window.bind_all("<F1>", lambda event: help())
+
 
 # search frame
 search_frame = tkinter.LabelFrame(frame, text="Search any word for:")
