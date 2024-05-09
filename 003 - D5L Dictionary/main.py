@@ -124,7 +124,6 @@ menubar.add_cascade(label="File", menu=file_menu)
 file_menu.add_command(label="Exit", command=window.quit)
 
 # Edit menu
-# Edit menu
 edit_menu = tkinter.Menu(menubar, tearoff=0)
 menubar.add_cascade(label="Edit", menu=edit_menu)
 edit_menu.add_command(label="Search Meaning", command=meaning_en, accelerator="Alt+M")
