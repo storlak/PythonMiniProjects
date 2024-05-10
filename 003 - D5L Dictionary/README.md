@@ -38,9 +38,9 @@ The main goal of D5L dictionary is to find meaning, synonym and antonym of words
 Various ways of installing the D5L:
 
 - Fork the repository to your Github and run main.py
-- Download the .exe file for windows.
-- Install via flathub (soon!) for Linux.
-- Download .deb file for Linux.
+- Download the .exe file for windows. (soon!)
+- Install via flathub for Linux. (soon!)
+- Download .deb file for Linux. (soon!)
 - Download main.py, constants,py, gui_utils.py, menu_utils.py and run main.py
     - main.py for English. 
     - main_fr.py for French. (not functional yet)
