@@ -3,10 +3,9 @@
 ![Static Badge](https://img.shields.io/badge/python-tkinter-blue?logo=python)
 ![Static Badge](https://img.shields.io/badge/python-pymultidictionary-blue?logo=python)
 ![Static Badge](https://img.shields.io/badge/IDE-VsCode-blue)
-![Static Badge](https://img.shields.io/badge/D5L-Dictionary-blue)
+![Static Badge](https://img.shields.io/badge/D5L-Dictionary-orange)
 
 
-<img src="https://globalartlimited.github.io/round-flags/flags/cn.svg" width="48">
 
 
 ![Views Counter](https://views-counter.vercel.app/badge?pageId=https%3A%2F%2Fgithub%2Ecom%2Fstorlak%2FPythonMiniProjects&leftColor=000000&rightColor=0adb3f&type=total&label=Viewers&style=none)
@@ -22,7 +21,7 @@
 ## Introduction
 
 D5L is a dictionary with 5 languages. It includes English, Turkish, French, Russian and simple Chinese.
-The main goal of ENG5 dictionary is to find meaning, synonym and antonym of words in these 5 languages.
+The main goal of D5L dictionary is to find meaning, synonym and antonym of words in these 5 languages.
 
 - D5L is written in python and includes a Tkinter.
 - Searches meaning of words, synonymes, antonymes in English, Turkish, French, Russian and Chinese.
