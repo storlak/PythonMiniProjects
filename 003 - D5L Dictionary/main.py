@@ -164,7 +164,6 @@ help_menu.add_command(label="About D5L", command=about)
 
 window.bind_all("<F1>", lambda event: help())
 
-
 # search frame
 search_frame = tkinter.LabelFrame(frame, text="Search any word for:")
 search_frame.grid(row=0, column=0, padx=20, pady=10)
