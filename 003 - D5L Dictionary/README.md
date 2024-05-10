@@ -12,10 +12,13 @@
 ![Views Counter](https://views-counter.vercel.app/badge?pageId=https%3A%2F%2Fgithub%2Ecom%2Fstorlak%2FPythonMiniProjects&leftColor=000000&rightColor=0adb3f&type=total&label=Viewers&style=none)
 
 # CONTENTS
+
 1. [Introduction](#introduction)
-2. [How to use?](#how-to-use)
-3. [Roadmap](#roadmap)
-4. [Known issues](#known-issues)
+2. [How to Install?](#how-to-install)
+3. [How to use?](#how-to-use)
+4. [Roadmap](#roadmap)
+5. [Known issues](#known-issues)
+6. [Contact & Forum & Wiki](#contact)
 
 **********************************
 
@@ -29,6 +32,21 @@ The main goal of D5L dictionary is to find meaning, synonym and antonym of words
 - Using PyMultiDictionary as database.
 - Requirements: Tkinter, Messagebox, Pymultidictionary.
 - Use help menu (F1) to contact further info.
+
+## How to Install
+
+Various ways of installing the D5L:
+
+- Fork the repository to your Github and run main.py
+- Download the .exe file for windows.
+- Install via flathub (soon!) for Linux.
+- Download .deb file for Linux.
+- Download main.py, constants,py, gui_utils.py, menu_utils.py and run main.py
+    - main.py for English. 
+    - main_fr.py for French. (not functional yet)
+    - main_ru.py for Russian. (not functional yet)
+    - main_ch.pt for Chinese. (not functional yet)
+    - main_tr.py for Turkish. (not functional yet)
 
 Installing necessary modules:
 
