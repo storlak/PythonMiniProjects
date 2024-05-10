@@ -10,7 +10,7 @@
 1. [Introduction](#introduction)
 2. [How to use?](#how-to-use)
 3. [Roadmap](#roadmap)
-4. [Knwon issues](#known-issues)
+4. [Known issues](#known-issues)
 
 **********************************
 
