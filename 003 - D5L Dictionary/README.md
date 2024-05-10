@@ -31,7 +31,7 @@ The main goal of D5L dictionary is to find meaning, synonym and antonym of words
 - Searches meaning of words, synonymes, antonymes in English, Turkish, French, Russian and Chinese.
 - Using PyMultiDictionary as database.
 - Requirements: Tkinter, Messagebox, Pymultidictionary.
-- Use help menu (F1) to contact further info.
+- Use help menu (F1) to have more information and support.
 
 ## How to Install
 
