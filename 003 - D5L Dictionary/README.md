@@ -1,8 +1,13 @@
 # 003 D5L Dictionary
 
-![Static Badge](https://img.shields.io/badge/python-exercises-blue?logo=python)
+![Static Badge](https://img.shields.io/badge/python-tkinter-blue?logo=python)
+![Static Badge](https://img.shields.io/badge/python-pymultidictionary-blue?logo=python)
 ![Static Badge](https://img.shields.io/badge/IDE-VsCode-blue)
-![Static Badge](https://img.shields.io/badge/English-Dictionary-red)
+![Static Badge](https://img.shields.io/badge/D5L-Dictionary-blue)
+
+
+<img src="https://globalartlimited.github.io/round-flags/flags/cn.svg" width="48">
+
 
 ![Views Counter](https://views-counter.vercel.app/badge?pageId=https%3A%2F%2Fgithub%2Ecom%2Fstorlak%2FPythonMiniProjects&leftColor=000000&rightColor=0adb3f&type=total&label=Viewers&style=none)
 
@@ -65,4 +70,5 @@ pip install Pymultidictionary
 [![Gmail Badge](https://img.shields.io/badge/-serdartorlak-c14438?style=flat&logo=Gmail&logoColor=white&link=mailto:serdartorlak@gmail.com)](mailto:serdartorlak@gmail.com)
 ![Mastodon Follow](https://img.shields.io/mastodon/follow/111266776829036638?style=flat&logo=mastodon&color=blue)
 [![Twitter Badge](https://img.shields.io/badge/-@serdartorlak-1ca0f1?style=flat&labelColor=1ca0f1&logo=twitter&logoColor=white&link=https://twitter.com/serdartorlak)](https://twitter.com/serdartorlak)
+
 
