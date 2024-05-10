@@ -124,7 +124,6 @@ menubar.add_cascade(label="File", menu=file_menu)
 file_menu.add_command(label="Exit", command=window.quit)
 
 # Edit menu
-# Edit menu
 edit_menu = tkinter.Menu(menubar, tearoff=0)
 menubar.add_cascade(label="Edit", menu=edit_menu)
 edit_menu.add_command(label="Search Meaning", command=meaning_en, accelerator="Alt+M")
@@ -152,7 +151,6 @@ tools_menu.add_command(label="Interface française")
 tools_menu.add_command(label="中文界面")
 tools_menu.add_command(label="Русский интерфейс")
 
-
 # Help menu
 help_menu = tkinter.Menu(menubar, tearoff=0)
 menubar.add_cascade(label="Help", menu=help_menu)
@@ -162,7 +160,7 @@ help_menu.add_separator()
 help_menu.add_command(label="Help", command=help, accelerator="F1")
 help_menu.add_command(label="View Licence", command=open_license)
 help_menu.add_separator()
-help_menu.add_command(label="About", command=about)
+help_menu.add_command(label="About D5L", command=about)
 
 window.bind_all("<F1>", lambda event: help())
 
