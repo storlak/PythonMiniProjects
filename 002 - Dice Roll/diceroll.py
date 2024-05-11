@@ -6,13 +6,15 @@ print("**********************************")
 
 while True:
     askuser = input("Do you want to roll the dice? (y/n): ")
-    if askuser == "y" or askuser == "Y":  # Check both conditions separately
+    if (
+        askuser == "y" or askuser == "Y" or askuser == "yes" or askuser == "Yes"
+    ):  # Check both conditions separately
         print("Rolling...")
         time.sleep(1.5)
         num = random.randint(1, 6)
         print("You got", num)
     elif askuser == "n" or askuser == "N":  # Check both conditions separately
-        print("Not, cool! Goodbye!")
+        print("Not, cool!Goodbye!")
         break
     else:
         print("Invalid input")
