@@ -12,7 +12,7 @@ while True:
         num = random.randint(1, 6)
         print("You got", num)
     elif askuser == "n" or askuser == "N":  # Check both conditions separately
-        print("Goodbye!")
+        print("Not, cool! Goodbye!")
         break
     else:
         print("Invalid input")
