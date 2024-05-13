@@ -72,7 +72,7 @@ pip install Pymultidictionary
 ## Roadmap
 
 - More languages will be added!
-- Keyboard shortcuts - uick commands will be revised.
+- Keyboard shortcuts - quick commands will be revised.
 - The app will be converted to an .exe file for Windows.
 - The app will be converted to Flatpak and published in the Flathub repository.
 - A Deb package will be created.

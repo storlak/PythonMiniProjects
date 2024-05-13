@@ -81,7 +81,7 @@ def open_license():
 
 # pops up about message
 def about():
-    current_date = "09.05.2024"
+    current_date = "13.05.2024"
     menu_utils.show_info_message(
         "About",
         f"{APP_NAME}\nVersion: {APP_VERSION}\nAuthor: {AUTHOR}\nLast Update: {current_date}",
