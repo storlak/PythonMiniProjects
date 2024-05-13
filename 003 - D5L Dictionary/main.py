@@ -61,14 +61,14 @@ def language_selection(language):
 # opens the README file in github
 def open_readme():
     menu_utils.open_url_in_browser(
-        "https://github.com/storlak/PythonMiniProjects/blob/main/003%20-%20Dictionary/README.md"
+        "https://github.com/storlak/PythonMiniProjects/blob/main/003%20-%20D5L%20Dictionary/README.md"
     )
 
 
 # opens the project in github
 def welcome():
     menu_utils.open_url_in_browser(
-        "https://github.com/storlak/PythonMiniProjects/tree/main/003%20-%20Dictionary"
+        "https://github.com/storlak/PythonMiniProjects/tree/main/003%20-%20D5L%20Dictionary"
     )
 
 
