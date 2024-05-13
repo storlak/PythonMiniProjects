@@ -2,6 +2,10 @@ app:
   name: D5L Dictionary
   version: 1.0
   exec: main.py
+  files:
+    - constants.py
+    - gui_utils.py
+    - menu_utils.py
   icon: D5L.ico
 
 build:
