@@ -6,6 +6,7 @@ app:
     - constants.py
     - gui_utils.py
     - menu_utils.py
+    - D5L.png
   icon: D5L.ico
 
 build:
