@@ -27,6 +27,7 @@ D5L is a dictionary with 5 languages. It includes English, Turkish, French, Russ
 - D5L is written in Python and includes Tkinter.
 - Searches meaning of words, synonyms, antonyms in English, Turkish, French, Russian, and Chinese.
 - Using PyMultiDictionary as the database.
+- You must be connected to internet to make searches.
 - Requirements: Tkinter, Messagebox, Pymultidictionary.
   -Use the help menu (F1) to have more information and support.
 
