@@ -36,7 +36,7 @@ D5L is a dictionary with 5 languages. It includes English, Turkish, French, Russ
 You can install D5L in various ways:
 
 - Fork the repository to your GitHub and run main.py.
-- Download the .exe file for Windows (coming soon!).
+- Download the .exe file for [Windows](https://github.com/storlak/PythonMiniProjects/releases/download/v1.0/D5L.Dictionary.exe).
 - Install via Flathub for Linux (coming soon!).
 - Download the .deb file for Linux (coming soon!).
 - Download main.py, constants.py, gui_utils.py, and menu_utils.py, and run main.py.
