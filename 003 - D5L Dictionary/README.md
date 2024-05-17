@@ -72,7 +72,7 @@ pip install Pymultidictionary
 - If you're searching for a verb, don't use "to". Write "help" instead of "to help".
 
 ## Roadmap
-
+- [] Languages
 - More languages will be added!
 - Keyboard shortcuts - quick commands will be revised.
 - The app will be converted to an .exe file for Windows.
