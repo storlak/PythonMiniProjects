@@ -29,7 +29,7 @@ D5L is a dictionary with 5 languages. It includes English, Turkish, French, Russ
 - Using PyMultiDictionary as the database.
 - You must be connected to internet to make searches.
 - Requirements: Tkinter, Messagebox, Pymultidictionary.
-  -Use the help menu (F1) to have more information and support.
+- Use the help menu (F1) to have more information and support.
 
 ## How to Install
 
