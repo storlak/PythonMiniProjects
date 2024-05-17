@@ -7,7 +7,7 @@
 
 ## Introduction
 
-A collection of mini Python projects and scripts developed during the learning process. This repository showcases a variety of small-scale projects such as mad libs, dice rolls, digital clocks, URL shorteners, and other examples that demonstrate fundamental concepts and techniques in Python programming. These projects are designed to provide hands-on experience with Python and help reinforce programming skills.
+A collection of mini Python projects and scripts developed during the learning process. This repository showcases a variety of small-scale projects such as mad libs, dice rolls and a 5 language Dictionary called D5L. These projects are designed to provide hands-on experience with Python and help reinforce my programming skills.
 
 ## Help & Wiki & Discussion
 
