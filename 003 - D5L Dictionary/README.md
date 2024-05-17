@@ -40,7 +40,7 @@ You can install D5L in various ways:
 - Install via Flathub for Linux (coming soon!).
 - Download the .deb file for Linux (coming soon!).
 - Download main.py, constants.py, gui_utils.py, and menu_utils.py, and run main.py.
-  - main.py for English.
+  - [main.py](https://github.com/storlak/PythonMiniProjects/blob/main/003%20-%20D5L%20Dictionary/main.py) for English.
   - main_fr.py for French (not functional yet).
   - main_ru.py for Russian (not functional yet).
   - main_ch.py for Chinese (not functional yet).
