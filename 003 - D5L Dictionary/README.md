@@ -59,12 +59,12 @@ pip install Pymultidictionary
 - Select the language you want to search first.
 - Type any word in the selected language into the search boxes.
 - Use "meaning," "synonym," or "antonym" to search for the meaning, synonym, or antonym of a word.
-- To search---> Meaning: **ALT-M** - Synonym: **ALT-S** - Antonym: **ALT-A**
+- To search---> Meaning: **"ALT-"M** - Synonym: **"ALT-S"** - Antonym: **"ALT-A"**
 - The search button or Enter key works as well.
-- Use the copy button to copy your search result. **ALT-C**
-- Use the clear button to clear the search and the result area. **ALT-L**
+- Use the copy button to copy your search result. **"ALT-C"**
+- Use the clear button to clear the search and the result area. **"ALT-L"**
 - If you have any questions or suggestions, use [Disccusions](https://github.com/storlak/PythonMiniProjects/discussions).
-- If the word you're looking for is not in the dictionary, the search result returns ([], ",").
+- If the word you're looking for is not in the dictionary, the search result returns **([], ",")**.
 
 🌟 Avoid the following while searching!
 
